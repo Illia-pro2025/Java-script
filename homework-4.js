@@ -7,6 +7,7 @@ const totalText =
   firstText.length !== 0 && lastText.length !== 0
     ? "Обидва поля заповнені"
     : "Не всі поля заповнені";
+   
 console.log(totalText);
 
 let firstNumber = Number(prompt("введите число"));
@@ -17,6 +18,12 @@ const totalNumber =
     ? "Сума більша за 10"
     : "Сума менша або дорівнює 10";
 console.log(totalNumber);
+
+if (firstNumber + lastNumber > 10) {
+  console.log("Сума більша за 10");
+} else {
+  console.log("Сума менша або дорівнює 10");
+}
 
 let textJavaScript = prompt("введите текст");
 const confirme = textJavaScript.includes("JavaScript")
